@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Birthday Wish App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>ជូនពរថ្ងៃខួបកំណើត</h1>
+
+    <!-- Wish Form -->
+    <div class="wish-form">
+      <h2>មានឱកាសឈ្នះ 16 Pro max</h2>
+      <input type="text" id="username" placeholder="ឈ្មោះរបស់អ្នក">
+      <textarea id="wish" placeholder="ជូនពរកាន់តែច្រើនឱកាសឈ្នះរង្វាន់កាន់តែច្រើន..."></textarea>
+      <center><button onclick="submitWish()">Submit Wish</button></center>
+    </div>
+
+    <!-- Admin View -->
+    <div class="admin-section">
+      <h2>Admin Login (ព្រហ្ម មេត្តា)</h2>
+      <input type="password" id="admin-password" placeholder="គ្មានភារៈកិច្ចហាមចូល">
+      <center><button onclick="viewWishes()">View All Wishes</button></center>
+      <center><button onclick="clearWishes()">Clear All Wishes</button></center>
+      <div id="wish-list" style="display: none;">
+        <h3>All Wishes</h3>
+        <ul id="wishes"></ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
